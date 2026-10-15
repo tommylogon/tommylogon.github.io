@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tommy Slaatbraaten builds software, automation and AI-driven systems. Explore VirtualWorld, Aura, WorldGraph and selected engineering work.">
+  <meta name="theme-color" content="#0b0d0f">
+  <title>Tommy Slaatbraaten — Software, Systems & AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="#top" aria-label="Tommy Slaatbraaten home">TS<span>.</span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">☰</button>
+  <nav id="site-nav" aria-label="Main navigation">
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#approach">Approach</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero reveal">
+    <div class="hero-copy">
+      <p class="eyebrow">Software · Systems · AI</p>
+      <h1>I like figuring out<br><em>how things work.</em></h1>
+      <p class="lead">I build software by understanding the system underneath it: its data, state, rules, interfaces and failure modes. My background spans IT operations, technical problem-solving, automation and independent software development.</p>
+      <div class="buttons">
+        <a class="button primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+        <a class="button" href="#contact">Get in touch</a>
+      </div>
+      <p class="hero-note">Based in Norway · Open to software, automation and AI-focused roles</p>
+    </div>
+    <aside class="terminal" aria-label="Current project snapshot">
+      <div class="term-top"><i></i> CURRENTLY BUILDING</div>
+      <pre><span>project</span>      = <b>VirtualWorld</b>
+<span>world model</span> = <b>authoritative graph</b>
+<span>agent</span>       = <b>reasoning + memory</b>
+<span>runtime</span>     = <b>rules before output</b>
+<span>focus</span>       = <b>systems that hold together</b>
+
+<b class="cursor">▋</b></pre>
+    </aside>
+  </section>
+
+  <section class="stats reveal" aria-label="Selected project facts">
+    <div><b>5+</b><span>years in IT / FinTech</span></div>
+    <div><b>3</b><span>featured software systems</span></div>
+    <div><b>78</b><span>VirtualWorld catalogue features*</span></div>
+    <div><b>1,000+</b><span>reported VirtualWorld tests*</span></div>
+    <p class="stat-note">*Project snapshots, not claims of complete feature coverage. See the project repository for current status.</p>
+  </section>
+
+  <section id="experience" class="split reveal">
+    <div class="label">01 / Experience</div>
+    <div>
+      <article class="role">
+        <div class="role-meta"><small>Apr 2026 — Dec 2026 · Everspring Solutions</small><span class="tag">Customer Operations</span></div>
+        <h2>Customer Operations Specialist</h2>
+        <p>Technical operations, customer delivery and system problem-solving across a Nordic B2B service. I worked between customers, business stakeholders, support and development teams, while taking ownership of internal tools and process automation.</p>
+        <ul>
+          <li>Built a configurable Python reporting application to replace a legacy Java tool ahead of an infrastructure shutdown.</li>
+          <li>Automated file handling, Azure workflows and data reconciliation, reducing selected 30–60 minute processes to roughly five minutes.</li>
+          <li>Used SQL and PL/SQL, logs and source-code investigation to trace issues across APIs, databases and connected systems.</li>
+          <li>Worked with tools including Azure, GitHub, Grafana, Argo CD, Kibana and Kubernetes-related tooling.</li>
+        </ul>
+        <div class="chips"><span>Python</span><span>SQL / PL/SQL</span><span>Automation</span><span>APIs</span><span>Azure</span><span>Technical troubleshooting</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-meta"><small>Jan 2021 — Mar 2026 · PayEx</small><span class="tag">Customer Operations</span></div>
+        <h2>Customer Operations Specialist</h2>
+        <p>Worked with product operations, technical support, customer requirements and integrations for a B2B payment-related service. The role combined customer-facing problem-solving with hands-on technical work.</p>
+        <ul>
+          <li>Built a Python GUI integrated with internal APIs to automate gift-card production. A workflow that previously involved repeated manual steps could process thousands of cards in minutes.</li>
+          <li>Used Oracle SQL and PL/SQL for data handling, validation, reporting and investigation.</li>
+          <li>Worked with customers, Key Account Managers, project managers and developers to turn operational needs into practical solutions.</li>
+          <li>Supported testing, defect investigation, documentation and system improvements.</li>
+        </ul>
+        <div class="chips"><span>Python</span><span>REST APIs</span><span>Postman</span><span>Oracle</span><span>PL/SQL</span><span>B2B support</span></div>
+      </article>
+
+      <article class="role">
+        <div class="role-meta"><small>Feb 2019 — Mar 2020 · IT Development AS · Moss</small></div>
+        <h2>IT Support / IT Consultant</h2>
+        <p>IT support and operations covering user assistance, workstation setup, monitoring, networks, VPN and remote management, alongside scripting and development tasks using C#, SQL and PowerShell.</p>
+      </article>
+
+      <article class="role">
+        <div class="role-meta"><small>Ongoing · Independent development</small><span class="tag">Personal projects</span></div>
+        <h2>Software development & experimentation</h2>
+        <p>Builds and maintains personal applications across AI systems, simulation, graph-based tools and game development. Work includes architecture, data modelling, implementation, testing, debugging, documentation and iterative refinement. AI agents are used as development tools, with specifications and verification remaining part of the workflow.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects" class="projects reveal">
+    <div class="label">02 / Selected projects</div>
+    <div class="section-intro">
+      <h2>Systems built to do more than answer a prompt.</h2>
+      <p>These projects explore different parts of the same problem: how to represent information, manage state, and build useful behaviour on top of it.</p>
+    </div>
+    <div class="project-grid">
+      <article class="project featured">
+        <div class="project-head"><small>01 · SIMULATION · AI AGENTS · ARCHITECTURE</small><span class="project-number">01</span></div>
+        <h3>VirtualWorld</h3>
+        <p>A local, single-player world simulation driven by AI agents. The graph is the authoritative world model; language models propose actions, while the engine owns world rules and state.</p>
+        <div class="details">
+          <div><span>World model</span><b>Areas, connections, items, characters and typed relationships</b></div>
+          <div><span>Simulation</span><b>Turns, actions, time, environment and character state</b></div>
+          <div><span>Agent systems</span><b>Memory, cognition levels, structured actions and MCP access</b></div>
+          <div><span>Engineering</span><b>Feature ledger, task tracker, tests, validation and system docs</b></div>
+        </div>
+        <p class="project-note">Active development. Feature and test counts are dated snapshots; some catalogue entries remain planned or unwired.</p>
+        <a class="text-link" href="https://github.com/tommylogon/virtual-world" target="_blank" rel="noreferrer">Explore repository ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head"><small>02 · LOCAL AI · MEMORY</small><span class="project-number">02</span></div>
+        <h3>Aura</h3>
+        <p>A modular personal AI assistant built around cooperating agents, an event bus, long-term graph memory, reflection, tool use and multimodal perception.</p>
+        <code>Python · Async agents · Neo4j · LLM integrations</code>
+        <a class="text-link" href="https://github.com/tommylogon/Aura" target="_blank" rel="noreferrer">Explore repository ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head"><small>03 · 3D · DATA MODELLING</small><span class="project-number">03</span></div>
+        <h3>WorldGraph</h3>
+        <p>A browser-based 3D graph editor for worldbuilding. Create and connect entities, edit rich properties, group nodes, search, undo/redo and export structured data.</p>
+        <code>JavaScript · Three.js · Graph data · Browser storage</code>
+        <a class="text-link" href="https://github.com/tommylogon/graph-editor" target="_blank" rel="noreferrer">Explore repository ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head"><small>04 · LLM EVALUATION · EXPERIMENTS</small><span class="project-number">04</span></div>
+        <h3>Model Arena</h3>
+        <p>A toolkit for comparing local language models using generation metrics, structured evaluation and agentic workflows where models critique and revise outputs.</p>
+        <code>Python · LM Studio · Evaluation workflows</code>
+        <a class="text-link" href="https://github.com/tommylogon" target="_blank" rel="noreferrer">Find it on GitHub ↗</a>
+      </article>
+
+      <article class="project">
+        <div class="project-head"><small>05 · GAME DEVELOPMENT</small><span class="project-number">05</span></div>
+        <h3>DeepSpaceDread</h3>
+        <p>An Alien-inspired survival-horror game project exploring stealth, atmosphere and escape-focused gameplay. A work in progress rather than a finished commercial release.</p>
+        <code>Game development · Gameplay systems</code>
+        <a class="text-link" href="https://github.com/tommylogon/DeepSpaceDread" target="_blank" rel="noreferrer">Explore repository ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="architecture" class="architecture reveal">
+    <div class="label">03 / Systems thinking</div>
+    <div class="wide">
+      <h2>The interesting part isn't the LLM.</h2>
+      <h3>It is everything around it.</h3>
+      <p class="architecture-intro">In VirtualWorld, an LLM does not get to redefine reality by describing it. The engine owns the state, validates proposed actions and applies the result according to the world's rules.</p>
+      <div class="flow" aria-label="VirtualWorld action flow">
+        <div><b>01</b><strong>World state</strong><span>Authoritative data</span></div><i>→</i>
+        <div><b>02</b><strong>Perception</strong><span>Available context</span></div><i>→</i>
+        <div><b>03</b><strong>Reasoning</strong><span>Goals and memory</span></div><i>→</i>
+        <div><b>04</b><strong>Proposed action</strong><span>Structured output</span></div><i>→</i>
+        <div><b>05</b><strong>Validation</strong><span>Rules decide reality</span></div>
+      </div>
+      <div class="principles">
+        <div><b>Separate cognition from time.</b><p>The world can advance without asking an expensive model to reason about every character on every tick.</p></div>
+        <div><b>Keep identity continuous.</b><p>A character remains the same entity with persistent state as its level of simulation changes.</p></div>
+        <div><b>Make behaviour inspectable.</b><p>Rules, events, tests and documentation make it easier to understand why the system behaved as it did.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="split reveal">
+    <div class="label">04 / Approach</div>
+    <div class="approach">
+      <blockquote>“I don't just want to make it work. I want to understand why it works.”</blockquote>
+      <p>I am most engaged when a problem is only partially understood. I break it into smaller questions, test assumptions, trace failures and build a solution around a coherent model of the system.</p>
+      <p>My work moves between different levels of detail: customer needs, product behaviour, API contracts, database state, implementation, test results and operational constraints. I enjoy learning unfamiliar tools by understanding their underlying concepts rather than treating each technology as an isolated set of commands.</p>
+      <p>I use AI tools throughout development, from investigation and architecture to implementation and debugging. The goal is not to accept generated code on faith; it is to iterate quickly while checking whether the result actually satisfies the requirements.</p>
+      <div class="skills">
+        <span>Python</span><span>C#</span><span>JavaScript / TypeScript</span><span>Java</span><span>PL/SQL</span>
+        <span>Flask</span><span>FastAPI</span><span>REST APIs</span><span>Three.js</span><span>Oracle</span>
+        <span>Neo4j</span><span>LLM integration</span><span>RAG</span><span>Agentic systems</span>
+        <span>Testing</span><span>Automation</span><span>Git</span><span>Docker</span><span>Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="background reveal">
+    <div class="label">05 / Background</div>
+    <div class="timeline">
+      <div><span>2015 — 2018</span><b>Bachelor's degree in Information Systems</b><small>Østfold University College</small></div>
+      <div><span>2019 — 2020</span><b>IT Support / IT Consultant</b><small>IT Development AS · Moss</small></div>
+      <div><span>2021 — 2026</span><b>Customer Operations Specialist</b><small>PayEx, then Everspring Solutions</small></div>
+      <div><span>Ongoing</span><b>Independent software development</b><small>AI systems, simulation, tools and games</small></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <p class="eyebrow">Let's build something</p>
+    <h2>Have a problem worth understanding?</h2>
+    <p>I'm interested in software development, automation, AI systems, architecture and difficult problems that don't have an obvious answer.</p>
+    <div class="links">
+      <a href="https://github.com/tommylogon" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="https://logonworks.itch.io/" target="_blank" rel="noreferrer">itch.io ↗</a>
+      <a href="https://www.linkedin.com/in/tommy-slaatbraaten-3974b9163/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+    </div>
+  </section>
+</main>
+<footer><span>Tommy Slaatbraaten</span><span>Built to explain the work, not just list the tools.</span><a href="#top">Back to top ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
